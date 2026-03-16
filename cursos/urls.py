@@ -4,6 +4,7 @@ from rest_framework.routers  import SimpleRouter
 
 router= SimpleRouter()
 router.register('cursos', CursoViewSet)
+router.register('avaliacoes', AvaliacaoViewSet)
 
 urlpatterns = [
     path('/cursos', CursosApiView.as_view(), name = 'cursos'),

@@ -45,5 +45,5 @@ class CursoViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
 class AvaliacaoViewSet(viewsets.ModelViewSet):
-    queryset = Avaliacao.objects.all
-serializer_class = AvaliacaoSerializer
+    queryset = Avaliacao.objects.all()
+    serializer_class = AvaliacaoSerializer
